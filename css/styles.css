@@ -47,7 +47,7 @@ link {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -84,21 +84,24 @@ header {
   color: #212121;
   margin-right: 93px;
 }
-.logo-color {
+.logo--color {
   color: #2196f3;
 }
-.site-navi {
+.logo--white {
+  color: #fff;
+}
+.navi {
   display: flex;
 }
-.navi-item-link {
+.navi__link {
   text-decoration: none;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.active {
+.navi__link--active {
   color: #2196f3;
 }
-.active::after {
+.navi__link--active::after {
   content: "";
   display: flex;
   position: relative;
@@ -106,20 +109,17 @@ header {
   border-top: 4px solid #2196f3;
   border-radius: 2px;
 }
-.navi-item:not(:last-child) {
+.navi__item:not(:last-child) {
   margin-right: 46px;
 }
-.contacts-navi {
+.contact {
   display: flex;
   margin-left: auto;
 }
-.contacts {
-  display: flex;
-}
-.contact:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
-.contact-link {
+.contact__link {
   text-decoration: none;
   color: #757575;
   fill: #757575;
@@ -127,17 +127,17 @@ header {
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-icon {
+.contact__icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.navi-item-link:hover,
-.navi-item-link:focus,
-.contact-link:hover,
-.contact-link:focus,
-.contact-icon:hover,
-.contact-icon:focus {
+.navi__link:hover,
+.navi__link:focus,
+.contact__link:hover,
+.contact__link:focus,
+.contact__icon:hover,
+.contact__icon:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -166,7 +166,7 @@ header {
   flex-direction: column;
   width: 1200px;
 }
-.title-text {
+.title__headline {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
@@ -177,7 +177,7 @@ header {
   margin-bottom: 30px;
   width: 696px;
 }
-.title-button {
+.title__button {
   background-color: #2196f3;
   color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -199,10 +199,10 @@ header {
 .list {
   display: flex;
 }
-.list-item {
+.list__item {
   width: 270px;
 }
-.list-heading {
+.list__headline {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -210,17 +210,17 @@ header {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-.list-item:not(:last-child) {
+.list__item:not(:last-child) {
   margin-right: 30px;
 }
-.list-text {
+.list__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   height: 75px;
   margin: 0px;
 }
-.list-icon-box {
+.list__box {
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 25px 0;
@@ -228,7 +228,7 @@ header {
   justify-content: center;
   margin-bottom: 30px;
 }
-.list-icon {
+.list__icon {
   height: 70px;
   width: 70px;
 }
@@ -239,19 +239,19 @@ header {
   padding-top: 0px;
   padding-bottom: 94px;
 }
-.what-we-do-list {
+.what-we-do__list {
   display: flex;
   justify-content: space-between;
 }
-.what-we-do-item:not(:last-child) {
+.what-we-do__item:not(:last-child) {
   margin-right: 30px;
 }
-.what-we-do-box {
+.what-we-do__box {
   width: 370px;
   height: 294px;
   position: relative;
 }
-.what-we-do-box-text {
+.what-we-do__text {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -278,11 +278,11 @@ header {
   letter-spacing: 0.03em;
   margin: 0 auto;
 }
-.our-team-list {
+.our-team__list {
   display: flex;
   justify-content: center;
 }
-.our-team-frame {
+.our-team__frame {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -291,7 +291,16 @@ header {
   background-color: #ffffff;
   margin: 0;
 }
-.our-team-link-list {
+.our-team__name {
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.our-team__workplace {
+  color: #757575;
+  margin: 0px;
+}
+.social {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -299,7 +308,7 @@ header {
   padding-left: 32px;
   padding-right: 32px;
 }
-.social-link {
+.social__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -307,39 +316,28 @@ header {
   align-items: center;
   justify-content: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.our-team-link {
   background-color: #fff;
   fill: #afb1b8;
 }
-.social-icon {
+.social__icon {
   width: 20px;
   height: 20px;
 }
-.our-team-link:hover,
-.our-team-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: #2196f3;
   fill: #fff;
 }
-.our-team-list-item:not(:last-child) {
+.our-team__item:not(:last-child) {
   margin-right: 30px;
-}
-.name {
-  font-weight: 500;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.workplace {
-  color: #757575;
-  margin: 0px;
 }
 /* END OUR TEAM */
 
 /* OUR CLIENTS */
-.our-clients-list {
+.our-clients__list {
   display: flex;
 }
-.our-clients-list-item {
+.our-clients__item {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   width: 170px;
@@ -350,15 +348,15 @@ header {
   fill: #afb1b8;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-icon {
+.logo__icon {
   width: 106px;
   height: 60px;
 }
-.our-clients-list-item:not(:last-child) {
+.our-clients__item:not(:last-child) {
   margin-right: 30px;
 }
-.our-clients-list-item:hover,
-.our-clients-list-item:focus {
+.our-clients__item:hover,
+.our-clients__item:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
   cursor: pointer;
@@ -374,11 +372,8 @@ header {
   background-color: #2f303a;
   line-height: 1.71;
 }
-.logo-footer {
-  color: #ffffff;
-}
 .address {
-  color: #ffffff;
+  color: #fff;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -412,18 +407,18 @@ header {
 .bottom-second-list {
   display: flex;
 }
-.bottom-second-list-item:not(:last-child) {
+.social__item--bottom:not(:last-child) {
   margin-right: 10px;
 }
-.bottom-second-list-link {
+.social__link--bottom {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #fff;
 }
 .bottom-list-item:not(:last-child) {
   margin-right: 70px;
 }
-.bottom-second-list-link:hover,
-.bottom-second-list-link:focus {
+.social__link--bottom:hover,
+.social__link--bottom:focus {
   background-color: #2196f3;
 }
 
