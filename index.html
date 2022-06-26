@@ -68,7 +68,7 @@
                           <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h2 class="list__heading">LOREM IPSUM</h2>
+              <h2 class="list__headline">LOREM IPSUM</h2>
               <p class="list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -80,7 +80,7 @@
                           <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h2 class="list__heading">LOREM IPSUM</h2>
+              <h2 class="list__headline">LOREM IPSUM</h2>
               <p class="list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -92,7 +92,7 @@
                           <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h2 class="list__heading">LOREM IPSUM</h2>
+              <h2 class="list__headline">LOREM IPSUM</h2>
               <p class="list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -104,7 +104,7 @@
                           <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h2 class="list__heading">LOREM IPSUM</h2>
+              <h2 class="list__headline">LOREM IPSUM</h2>
               <p class="list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -376,22 +376,22 @@
     <footer class="bottom">
       <div class="container">
         <ul class="bottom-list">
-          <li class="bottom-list-item">
+          <li class="bottom-list__item">
             <a class="logo logo--white" href="/"><span class="logo--color">Web</span>Studio</a>
             <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-            <address class="contact-address">
-            <p class="contact">
+            <address>
+            <p class="contact contact--bottom">
               <a class="contact__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a>
             </p>
-            <p class="contact">
+            <p class="contact contact--bottom">
               <a class="contact__link" href="tel:+48111111111">+48 111 111 111</a>
             </p>
             </address>
           </li>
-          <li class="bottom-list-item">
-            <h3 class="bottom-list-item-headline">dołącz do nas</h3>
-            <ul class="social">
+          <li class="bottom-list__item">
+            <h3 class="bottom-list__headline">dołącz do nas</h3>
+            <ul class="social social--bottom">
               <li class="social__item social__item--bottom">
                 <a class="social__link social__link--bottom" href="#">
                         <svg class="social__icon">
@@ -422,15 +422,15 @@
               </li>
             </ul>
           </li>
-          <li class="bottom-list-item">
-            <h3 class="bottom-list-item-headline">zapisz się do newslettera</h3> 
+          <li class="bottom-list__item">
+            <h3 class="bottom-list__headline">zapisz się do newslettera</h3> 
             <form class="bottom-form" method="post">
               <label>
-                <input class="newsletter-input" type="email" name="email" placeholder="E-mail">
+                <input class="bottom-form__input" type="email" name="email" placeholder="E-mail">
               </label>
               <button class="title__button" type="submit">
                   Zapisz się
-                <svg class="send-icon">
+                <svg class="bottom-form__icon">
                  <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
@@ -442,40 +442,40 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
-          <svg class="close-btn-icon">
+          <svg class="close-btn__icon">
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
         <form class="modal-form" action="#" method="post" >
-          <h4 class="modal-form-headline">Zostaw swoje dane w formularzu poniżej</h4>
-          <label class="modal-form-label" for="user_name">
-            <p class="modal-form-label-text">Imie</p>
-            <svg class="modal-icon">
+          <h4 class="modal-form__headline">Zostaw swoje dane w formularzu poniżej</h4>
+          <label class="modal-form__label" for="user_name">
+            <p class="modal-form__text">Imie</p>
+            <svg class="modal-form__icon">
                 <use href="./images/sprite.svg#icon-person-black"></use>
             </svg>
-            <input class="modal-form-input" id="user_name" type="text" name="name" required>
+            <input class="modal-form__input" id="user_name" type="text" name="name" required>
           </label>
-          <label class="modal-form-label" for="user_phone">
-            <p class="modal-form-label-text">Telefon</p>
-            <svg class="modal-icon">
+          <label class="modal-form__label" for="user_phone">
+            <p class="modal-form__text">Telefon</p>
+            <svg class="modal-form__icon">
                 <use href="./images/sprite.svg#icon-phone-black"></use>
             </svg>
-            <input class="modal-form-input" id="user_phone" type="tel" name="phone" required>
+            <input class="modal-form__input" id="user_phone" type="tel" name="phone" required>
           </label>
-          <label class="modal-form-label" for="user_email">
-            <p class="modal-form-label-text">Email</p>
-            <svg class="modal-icon">
+          <label class="modal-form__label" for="user_email">
+            <p class="modal-form__text">Email</p>
+            <svg class="modal-form__icon">
                 <use href="./images/sprite.svg#icon-email-black"></use>
             </svg>
-            <input class="modal-form-input" id="user_email" type="email" name="email" required>
+            <input class="modal-form__input" id="user_email" type="email" name="email" required>
           </label>
-          <label class="modal-form-label" for="user_feedback">
-            <p class="modal-form-label-text">Komentarz</p>
-            <textarea id="user-feedback" class="modal-form-label-textarea" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
+          <label class="modal-form__label" for="user_feedback">
+            <p class="modal-form__text">Komentarz</p>
+            <textarea id="user-feedback" class="modal-form__textarea" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
           </label>
-          <div class="modal-form-policy">
-            <input class="modal-form-policy-input visually-hidden" type="checkbox" id="user_policy" name="policy">
-            <label class="modal-form-policy-text" for="user_policy">Oświadczam iż akceptuję <a class="modal-form-policy-link" href="#">Regulamin</a> i <a class="modal-form-policy-link" href="#">Politykę Prywatności.</a></label>
+          <div class="policy">
+            <input class="policy__input visually-hidden" type="checkbox" id="user_policy" name="policy">
+            <label class="policy__text" for="user_policy">Oświadczam iż akceptuję&nbsp;<a class="policy__link" href="#">Regulamin</a>&nbsp;i&nbsp;<a class="policy__link" href="#">Politykę Prywatności.</a></label>
           </div>
           <button class="title__button modal-button" type="submit">Wyślij</button>
         </form>
