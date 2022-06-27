@@ -1,3 +1,21 @@
+@import "../utils/vissualy-hidden";
+
 @import "../base/common.scss";
 @import "../base/container.scss";
 @import "../base/section.scss";
+@import "../base/section__title";
+
+@import "../components/logo";
+@import "../components/social";
+@import "../components/title__button";
+@import "../components/backdrop";
+@import "../components/modal";
+
+@import "../layout/header";
+@import "../layout/title";
+@import "../layout/list";
+@import "../layout/what-we-do";
+@import "../layout/our-team";
+@import "../layout/our-clients";
+@import "../layout/bottom";
+@import "../layout/portfolio-page";

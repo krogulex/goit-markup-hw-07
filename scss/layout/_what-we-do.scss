@@ -1,0 +1,31 @@
+.what-we-do {
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
+  .what-we-do__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .what-we-do__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .what-we-do__box {
+    width: 370px;
+    height: 294px;
+    position: relative;
+  }
+  .what-we-do__text {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    margin: 0;
+  }
