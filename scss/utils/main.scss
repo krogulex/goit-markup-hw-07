@@ -1,3 +1,4 @@
+@import "../utils/variables";
 @import "../utils/vissualy-hidden";
 
 @import "../base/common.scss";
@@ -10,6 +11,8 @@
 @import "../components/title__button";
 @import "../components/backdrop";
 @import "../components/modal";
+@import "../components/modal-form";
+@import "../components/button-list";
 
 @import "../layout/header";
 @import "../layout/title";

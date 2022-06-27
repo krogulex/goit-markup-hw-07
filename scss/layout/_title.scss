@@ -14,21 +14,18 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+
+    &__headline {
+      font-family: $main-font;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      width: 696px;
+    }
   }
-  .title .container {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-  }
-  .title__headline {
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    width: 696px;
-  }
+
   

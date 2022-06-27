@@ -1,13 +1,8 @@
 body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
+  font-family: $main-font;
+  color: $color-accent;
   font-size: 14px;
   line-height: 16px;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 h1,
 h2,

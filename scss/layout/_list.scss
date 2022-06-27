@@ -1,10 +1,14 @@
 .list {
     display: flex;
   }
-  .list__item {
+.list__item {
     width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
   }
-  .list__headline {
+}
+.list__headline {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -12,25 +16,22 @@
     text-transform: uppercase;
     padding-bottom: 10px;
   }
-  .list__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .list__text {
+.list__text {
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $color-secondary;
     height: 75px;
     margin: 0px;
   }
-  .list__box {
-    background-color: #f5f4fa;
+.list__box {
+    background-color: $color-background-secondary;
     border-radius: 4px;
     padding: 25px 0;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
   }
-  .list__icon {
+.list__icon {
     height: 70px;
     width: 70px;
   }
